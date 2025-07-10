@@ -3366,7 +3366,6 @@ About section start
   }
 }
 @media (max-width: 991px) {
-
   .counter-item {
     .title {
       font-size: 40px;
@@ -3851,6 +3850,7 @@ Newsletter section2 start
 
   .newsletter-left-side {
     display: flex;
+    align-items: center;
     gap: 20px;
   }
   .subscribe-normal-text {

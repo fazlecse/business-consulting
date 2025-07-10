@@ -3249,6 +3249,7 @@ Newsletter section2 start
 }
 .newsletter-section .newsletter-left-side {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 .newsletter-section .subscribe-normal-text {
