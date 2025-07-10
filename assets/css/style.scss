@@ -3743,11 +3743,13 @@ Project section end
     position: absolute;
     bottom: -5px;
     right: 84px;
+    z-index: -1;
   }
   .shape-2 {
     position: absolute;
     top: 167px;
     left: -100px;
+    z-index: -1;
   }
 }
 
