@@ -3105,6 +3105,7 @@ Project section start
 .project-swiper .swiper-button-next:hover {
   background-image: linear-gradient(102deg, #5163ff -0.32%, #fe71b9 100%);
   color: rgb(var(--white));
+  border: none;
 }
 .project-swiper .swiper-button-prev {
   right: 75px;
