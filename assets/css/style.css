@@ -815,6 +815,16 @@ Offcanvas end
   animation: rotate 20s linear infinite;
 }
 
+@media (max-width: 1024px) {
+  .round-box-content-wrapper::before {
+    bottom: -7px;
+    left: -20px;
+  }
+  .round-box-content-wrapper::after {
+    bottom: 1px;
+    right: -31px;
+  }
+}
 .round-box-content2 {
   width: 178px;
   height: 178px;
@@ -2917,9 +2927,14 @@ Service section start
 .service-box .text-box {
   max-width: 601px;
 }
+.service-box .img-box {
+  height: 100%;
+}
 .service-box .img-box img {
   border-radius: 10px;
   border: 5px solid rgb(var(--white));
+  height: 100%;
+  object-fit: cover;
 }
 
 .service-badge {
@@ -2947,7 +2962,7 @@ Service section start
     top: 100px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .service-box {
     padding: 30px;
   }
@@ -2994,7 +3009,6 @@ Project section start
   width: 23.03%;
   margin-left: -10px;
   max-width: 347px;
-  margin-top: 73px;
 }
 
 .project-box {
@@ -3048,6 +3062,7 @@ Project section start
 }
 .project-box .title-btn .icon-box {
   width: 54px;
+  min-width: 54px;
   height: 54px;
   background: linear-gradient(102deg, #5163ff -0.32%, #fe71b9 100%);
   display: flex;
@@ -3115,9 +3130,30 @@ Project section start
   right: 0;
 }
 
+@media (min-width: 992px) {
+  .project-swiper {
+    margin-top: -60px;
+  }
+  .project-section .description {
+    flex-grow: 1;
+    margin-left: -135px;
+  }
+}
+@media (min-width: 1200px) {
+  .project-swiper {
+    margin-top: -120px;
+  }
+  .project-section .description {
+    flex-grow: 1;
+    margin-left: -66px;
+  }
+}
 @media (max-width: 1199px) {
   .project-section .big-text-box {
     font-size: 80px;
+  }
+  .project-section .description {
+    margin-top: 20px;
   }
 }
 @media (max-width: 991px) {
@@ -3134,6 +3170,29 @@ Project section start
   .project-box .title-btn {
     font-size: 16px;
     line-height: 26px;
+  }
+  .project-box .title-btn .icon-box {
+    width: 38px;
+    min-width: 38px;
+    height: 38px;
+  }
+  .project-swiper .swiper-button-prev,
+  .project-swiper .swiper-button-next {
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
+  }
+  .project-swiper .swiper-button-prev {
+    right: 65px;
+  }
+}
+@media (max-width: 575px) {
+  .project-swiper .swiper-button-prev,
+  .project-swiper .swiper-button-next {
+    top: 35px;
+  }
+  .project-swiper .swiper-button-next {
+    right: 10px;
   }
 }
 /*----------------------------------------------
@@ -3330,6 +3389,11 @@ Newsletter section2 start
   padding: 50px 70px;
 }
 
+@media (max-width: 1199px) {
+  .newsletter-section-inner {
+    padding: 50px;
+  }
+}
 @media (max-width: 991px) {
   .newsletter-section .newsletter-section-inner {
     padding: 50px;
